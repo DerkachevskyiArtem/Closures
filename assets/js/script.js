@@ -14,10 +14,6 @@ function createMultiplier(x) {
 const multiply = createMultiplier(5);
 
 // Task with Arrow function solution
-const createMultiplierArrow = (x) => {
-  let accumulator = 1;
-
-  return (y) => (accumulator *= y) * x;
-};
+const createMultiplierArrow = x => y => x *= y;
 
 const multiplyArrow = createMultiplierArrow(5);
